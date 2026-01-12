@@ -1,0 +1,27 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "backend",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-01-10",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "vars": {
+    "DATABASE_URL": "prisma+postgres://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqd3RfaWQiOjEsInNlY3VyZV9rZXkiOiJza194UFBZTV84Yk9OTWdZbG4xdDdDNUkiLCJhcGlfa2V5IjoiMDFLN01KUTBaV1lRVjdGNEpSTTZDWE5UVDciLCJ0ZW5hbnRfaWQiOiI4MzAzZjI0YjU3NTEzMDViOWQwMGUwMWM3ZDdiNzdmN2VjN2JmZTA5Y2UyNTFhNWEyMjBhZTgzOWEyOTM3ZjRhIiwiaW50ZXJuYWxfc2VjcmV0IjoiMGU1MzczMDktNTYyNi00MDUzLWJhMzAtZWY5YTI5NGFmNGI0In0.NXNVTY-vvNnIh3j1ul-dRuh6L7xKG3yvBzf7OXnaA_k",
+    "JWT_SECRET": "youknowi'msecretivehahahahah"
+  },
+  "env": {
+    "production": {
+      "vars": {
+        "DATABASE_URL": "prisma+postgres://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqd3RfaWQiOjEsInNlY3VyZV9rZXkiOiJza194UFBZTV84Yk9OTWdZbG4xdDdDNUkiLCJhcGlfa2V5IjoiMDFLN01KUTBaV1lRVjdGNEpSTTZDWE5UVDciLCJ0ZW5hbnRfaWQiOiI4MzAzZjI0YjU3NTEzMDViOWQwMGUwMWM3ZDdiNzdmN2VjN2JmZTA5Y2UyNTFhNWEyMjBhZTgzOWEyOTM3ZjRhIiwiaW50ZXJuYWxfc2VjcmV0IjoiMGU1MzczMDktNTYyNi00MDUzLWJhMzAtZWY5YTI5NGFmNGI0In0.NXNVTY-vvNnIh3j1ul-dRuh6L7xKG3yvBzf7OXnaA_k",
+        "JWT_SECRET": "youknowi'msecretivehahahahah"
+      }
+    },
+    "development": {
+      "vars": {
+        "DATABASE_URL": "prisma+postgres://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqd3RfaWQiOjEsInNlY3VyZV9rZXkiOiJza194UFBZTV84Yk9OTWdZbG4xdDdDNUkiLCJhcGlfa2V5IjoiMDFLN01KUTBaV1lRVjdGNEpSTTZDWE5UVDciLCJ0ZW5hbnRfaWQiOiI4MzAzZjI0YjU3NTEzMDViOWQwMGUwMWM3ZDdiNzdmN2VjN2JmZTA5Y2UyNTFhNWEyMjBhZTgzOWEyOTM3ZjRhIiwiaW50ZXJuYWxfc2VjcmV0IjoiMGU1MzczMDktNTYyNi00MDUzLWJhMzAtZWY5YTI5NGFmNGI0In0.NXNVTY-vvNnIh3j1ul-dRuh6L7xKG3yvBzf7OXnaA_k",
+        "JWT_SECRET": "youknowi'msecretivehahahahah"
+      }
+    }
+  }
+}
